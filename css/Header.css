@@ -116,4 +116,8 @@ nav ul li a:hover {
     nav.active ul {
         display: block;
     }
+
+    .logo img {
+        text-align: left;
+    }
 }
