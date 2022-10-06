@@ -73,13 +73,15 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
+/* Below 1200px */
 @media only screen and (max-width: 75em) {
     header {
         margin: 2rem;
     }
 }
 
-@media only screen and (max-width: 48em) {
+/* Below 816px  */
+@media only screen and (max-width: 51em) {
     .menu-toggle {
         display: block;
         width: 4rem;
