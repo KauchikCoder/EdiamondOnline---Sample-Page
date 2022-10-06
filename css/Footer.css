@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 7rem 0;
+    margin-top: 1rem;
+}
+
+.container {
+    max-width: 117rem;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 1.5rem;
+}
+
+.footer-col h4 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 3.5rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-color: #e91e63;
+    height: .2rem;
+    box-sizing: border-box;
+    width: 5rem;
+}
+
+.footer .container .row .footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.footer-col ul li a {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: .8rem;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 1rem 1rem 0;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* Below 768px */
+@media only screen and (max-width: 48em) {
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+    .footer-col {
+        width: 100%;
+    }
+}
