@@ -34,10 +34,11 @@ header {
     text-align: center;
     box-sizing: border-box;
     float: left;
+    width: 25%;
 }
 
 .logo img {
-    width: 60%;
+    width: 100%;
 }
 
 nav {
@@ -117,7 +118,28 @@ nav ul li a:hover {
         display: block;
     }
 
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
     .logo img {
-        text-align: left;
+        width: 80%;
+    }
+}
+
+/* Below 1000px  */
+@media only screen and (max-width: 62.5em) {
+    .logo {
+        width: 30%;
+    }
+}
+
+/* Below 400px  */
+@media only screen and (max-width: 25em) {
+    .logo {
+        width: 30%;
     }
 }
