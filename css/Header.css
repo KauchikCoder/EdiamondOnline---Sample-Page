@@ -30,7 +30,7 @@ header {
 
 .logo {
     height: 5rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: center;
     box-sizing: border-box;
     float: left;
@@ -81,8 +81,8 @@ nav ul li a:hover {
     }
 }
 
-/* Below 816px  */
-@media only screen and (max-width: 52em) {
+/* Below 1110px */
+@media only screen and (max-width: 69.375em) {
     .menu-toggle {
         display: block;
         width: 4rem;
@@ -117,29 +117,87 @@ nav ul li a:hover {
     nav.active ul {
         display: block;
     }
+}
 
+/* Below 880px */
+@media only screen and (max-width: 55em) {
     .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 35%;
+    }
+}
+
+/* Below 800px */
+@media only screen and (max-width: 50em) {
+    .logo {
+        width: 40%;
+    }
+}
+
+/* Below 704px */
+@media only screen and (max-width: 44em) {
+    .logo {
+        width: 45%;
+    }
+}
+
+/* Below 592px */
+@media only screen and (max-width: 37em) {
+    .logo {
+        width: 50%;
+    }
+}
+
+/* Below 560px */
+@media only screen and (max-width: 35em) {
+    .logo {
+        width: 55%;
+    }
+}
+
+/* Below 464px */
+@media only screen and (max-width: 29em) {
+    .logo {
         width: 60%;
+    }
+}
+
+/* Below 416px */
+@media only screen and (max-width: 26em) {
+    .logo {
+        width: 65%;
+    }
+}
+
+/* Below 380px */
+@media only screen and (max-width: 24em) {
+    .logo {
+        width: 70%;
+    }
+}
+
+/* Below 352px */
+@media only screen and (max-width: 22em) {
+    .logo {
+        width: 75%;
+    }
+}
+
+/* Below 304px */
+@media only screen and (max-width: 19em) {
+    .logo {
+        width: 70%;
+        padding: 0;
+    }
+}
+
+/* Below 256px */
+@media only screen and (max-width: 16em) {
+    .logo {
+        width: 68%;
+        padding: 0;
     }
 
     .logo img {
-        width: 80%;
-    }
-}
-
-/* Below 1000px  */
-@media only screen and (max-width: 62.5em) {
-    .logo {
-        width: 30%;
-    }
-}
-
-/* Below 400px  */
-@media only screen and (max-width: 25em) {
-    .logo {
-        width: 30%;
+        width: 55vw;
     }
 }

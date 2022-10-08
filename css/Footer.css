@@ -19,7 +19,8 @@ body {
 
 .footer {
     background-color: #24262b;
-    padding: 7rem 0;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
     margin-top: 1rem;
 }
 
@@ -100,9 +101,20 @@ body {
     background-color: #ffffff;
 }
 
+.para {
+    text-align: center;
+    /* border: .2rem solid black;
+    border-radius: 1rem; */
+    margin: 3rem 0;
+    font-size: 1.3rem;
+}
+
+.para span {
+    color: #ffffff;
+}
+
 /* Below 768px */
 @media only screen and (max-width: 48em) {
-
     .footer-col {
         width: 50%;
         margin-bottom: 3rem;
