@@ -1,170 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EdiamondOnline - A Best Diamond Seller In This World</title>
-    <link rel="stylesheet" href="css/HomeSection.css" />
-    <link rel="stylesheet" href="css/Footer.css" />
-    <link rel="stylesheet" href="css/Header.css" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo"><img src="/images/logo.png" alt="Logo" /></a>
-      <div class="menu-toggle"></div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Online Inventory</a></li>
-          <li><a href="#">Special Offer</a></li>
-          <li><a href="#">Sign up</a></li>
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="clearfix"></div>
-    </header>
-    <!-- ======================================== 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EdiamondOnline - A Best Diamond Seller In This World</title>
+        <link rel="stylesheet" href="css/HomeSection.css" />
+        <link rel="stylesheet" href="css/Footer.css" />
+        <link rel="stylesheet" href="css/Header.css" />
+        <link
+            rel="shortcut icon"
+            href="images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Boxicons CdN link -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="sidebar">
+                <div class="logo-details">
+                    <i class="bx bxl-c-plus-plus icon"></i>
+                    <div class="logo_name">CodingLab</div>
+                    <i class="bx bx-menu" id="btn"></i>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <i class="bx bx-search"></i>
+                        <input type="text" placeholder="Search..." />
+                        <span class="tooltip">Search</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-grid-alt"></i>
+                            <span class="links_name">Dashboard</span>
+                        </a>
+                        <span class="tooltip">Dashboard</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-user"></i>
+                            <span class="links_name">User</span>
+                        </a>
+                        <span class="tooltip">User</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-chat"></i>
+                            <span class="links_name">Messages</span>
+                        </a>
+                        <span class="tooltip">Messages</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-pie-chart-alt-2"></i>
+                            <span class="links_name">Analytics</span>
+                        </a>
+                        <span class="tooltip">Analytics</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-folder"></i>
+                            <span class="links_name">File Manager</span>
+                        </a>
+                        <span class="tooltip">Files</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-cart-alt"></i>
+                            <span class="links_name">Order</span>
+                        </a>
+                        <span class="tooltip">Order</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-heart"></i>
+                            <span class="links_name">Saved</span>
+                        </a>
+                        <span class="tooltip">Saved</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-cog"></i>
+                            <span class="links_name">Setting</span>
+                        </a>
+                        <span class="tooltip">Setting</span>
+                    </li>
+                    <li class="profile">
+                        <div class="profile-details">
+                            <!--<img src="profile.jpg" alt="profileImg">-->
+                            <div class="name_job">
+                                <div class="name">Prem Shahi</div>
+                                <div class="job">Web designer</div>
+                            </div>
+                        </div>
+                        <i class="bx bx-log-out" id="log_out"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="imgLogo">
+                <a href="#" class="logo"
+                    ><img src="/images/logo.png" alt="Logo"
+                /></a>
+            </div>
+            <div class="menu-toggle"></div>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Online Inventory</a></li>
+                        <li><a href="#">Special Offer</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+        <!-- ======================================== 
           Our Main Hero Section Start  
     ========================================  -->
-    <section class="home_page_section">
-      <div class="imgBx">
-        <img src="images/homeimg.jpg" />
-      </div>
-      <div class="contentBx">
-        <div class="formBx">
-          <h2>Login</h2>
-          <form>
-            <div class="inputBx">
-              <span>Username</span>
-              <input type="text" name="text" id="text" />
+        <section class="home_page_section">
+            <div class="imgBx">
+                <img src="images/homeimg.jpg" />
             </div>
-            <div class="inputBx">
-              <span>Password</span>
-              <input type="password" name="password" id="password" />
+            <div class="contentBx">
+                <div class="formBx">
+                    <h2>Login</h2>
+                    <form>
+                        <div class="inputBx">
+                            <span>Username</span>
+                            <input type="text" name="text" id="text" />
+                        </div>
+                        <div class="inputBx">
+                            <span>Password</span>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
+                        </div>
+                        <div class="remember">
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="checkbox"
+                                    id="checkbox"
+                                />
+                                Remember Me</label
+                            >
+                        </div>
+                        <div class="inputBx">
+                            <input
+                                type="submit"
+                                name="submit"
+                                id="submit"
+                                value="Login"
+                            />
+                        </div>
+                        <div class="inputBx">
+                            <p>Forget Time? <a href="#">Forget Password?</a></p>
+                            <br />
+                            <p>Dont have an account? <a href="#">Sign Up</a></p>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="remember">
-              <label
-                ><input type="checkbox" name="checkbox" id="checkbox" />
-                Remember Me</label
-              >
-            </div>
-            <div class="inputBx">
-              <input type="submit" name="submit" id="submit" value="Login" />
-            </div>
-            <div class="inputBx">
-              <p>Forget Time? <a href="#">Forget Password?</a></p>
-              <br />
-              <p>Dont have an account? <a href="#">Sign Up</a></p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ======================================== 
+        <!-- ======================================== 
           Our Footer Section Start  
     ========================================  -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
-            <h4>Content</h4>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">4 C's</a></li>
-              <li><a href="#">Grading System</a></li>
-              <li><a href="#">Report Verify Services</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Keep In Touch</h4>
-            <ul>
-              <li><a href="#">Sign Up</a></li>
-              <li><a href="#">Feedback</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Online Shop</h4>
-            <ul>
-              <li><a href="#">Natural Diamond</a></li>
-              <li><a href="#">Lab Grown Diamond</a></li>
-              <li><a href="#">Certified Diamond</a></li>
-              <li><a href="#">Non-Certified Diamond</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Follow us</h4>
-            <div class="social-links">
-              <a href="#" title="Wechatid:  dalsukh_ediamond123"
-                ><i class="fa-brands fa-weixin"></i
-              ></a>
-              <a href="#" title="WhatsApp: +91 95375 70404"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-              <a href="#" title="Skype: ediamonline"
-                ><i class="fa-brands fa-skype"></i
-              ></a>
-              <a href="#" title="FaceBook: EDiamondonlineGroup"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a href="#" title="Instagram: ediamondonline"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="#" title="Viber: +91 95375 70404"
-                ><i class="fa-brands fa-viber"></i
-              ></a>
-              <a href="#" title="Twitter: ediamondonline"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a href="#" title="Linked-in: ediamondonline"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-              <a href="#" title="Pintrest: ediamondonline"
-                ><i class="fa-brands fa-pinterest"></i
-              ></a>
-              <a href="#" title="QQ: 2308498703"
-                ><i class="fa-brands fa-qq"></i
-              ></a>
-              <a href="#" title="Blogspot"
-                ><i class="fa-brands fa-blogger"></i
-              ></a>
-              <a href="#" title="Telegram: +91 95375 70404"
-                ><i class="fa-brands fa-telegram"></i
-              ></a>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Content</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">4 C's</a></li>
+                            <li><a href="#">Grading System</a></li>
+                            <li><a href="#">Report Verify Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Keep In Touch</h4>
+                        <ul>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online Shop</h4>
+                        <ul>
+                            <li><a href="#">Natural Diamond</a></li>
+                            <li><a href="#">Lab Grown Diamond</a></li>
+                            <li><a href="#">Certified Diamond</a></li>
+                            <li><a href="#">Non-Certified Diamond</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#" title="Wechatid: dalsukh_ediamond123">
+                                <i class="fa-brands fa-weixin"></i>
+                            </a>
+                            <a href="#" title="WhatsApp: +91 95375 70404">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="#" title="Skype: ediamonline">
+                                <i class="fa-brands fa-skype"></i>
+                            </a>
+                            <a href="#" title="FaceBook: EDiamondonlineGroup">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" title="Instagram: ediamondonline">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" title="Viber: +91 95375 70404">
+                                <i class="fa-brands fa-viber"></i>
+                            </a>
+                            <a href="#" title="Twitter: ediamondonline">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" title="Linked-in: ediamondonline">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" title="Pintrest: ediamondonline">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                            <a href="#" title="QQ: 2308498703">
+                                <i class="fa-brands fa-qq"></i>
+                            </a>
+                            <a href="#" title="Blogspot">
+                                <i class="fa-brands fa-blogger"></i>
+                            </a>
+                            <a href="#" title="Telegram: +91 95375 70404">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="para">
-        <span>
-          © 2022 EDiamond Online. All Rights Reserved. [Site best viewed in
-          Microsoft Internet Explorer OR Mozilla Firefox or Google Chrome or
-          Opera Latest Version with 1920 x 1080 resolution ]
-        </span>
-      </div>
-    </footer>
+            <div class="para">
+                <span>
+                    © 2022 EDiamond Online. All Rights Reserved. [Site best
+                    viewed in Microsoft Internet Explorer OR Mozilla Firefox or
+                    Google Chrome or Opera Latest Version with 1920 x 1080
+                    resolution ]
+                </span>
+            </div>
+        </footer>
 
-    <!-- ======================================== 
+        <!-- ======================================== 
           Our JavaScript Section Start  
     ========================================  -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/index.js"></script>
-  </body>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>

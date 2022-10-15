@@ -8,12 +8,11 @@
 
 html {
     font-size: 62.5%;
-    /* 1rem = 10px */
     overflow-x: hidden;
+    /* 1rem = 10px */
 }
 
 body {
-    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -111,6 +110,13 @@ body {
 
 .para span {
     color: #ffffff;
+}
+
+/* Below 1200px */
+@media only screen and (max-width: 75em) {
+    .container {
+        margin-left: 8rem;
+    }
 }
 
 /* Below 768px */
