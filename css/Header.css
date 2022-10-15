@@ -58,7 +58,7 @@ body {
 .navbar nav ul li a {
     display: block;
     margin: .5rem 0;
-    padding: .5rem 1rem;
+    padding: 1rem 1.3rem;
     text-decoration: none;
     color: #262626;
     font-size: 1.2rem;
